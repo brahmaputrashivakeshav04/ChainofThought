@@ -1,0 +1,25 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "gemini-2.5-flash",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T09:31:40.384592Z",
+  "parent_chunk_id": "P05_p5_fig_023",
+  "paper_id": "P05",
+  "page": 5,
+  "figure_number": "Figure 1",
+  "image_path": "data\\figures\\P05\\fig_1_p5.png",
+  "image_hash": "169861bb782b4d6a49adb697a1047f5b162d1852d844a7148995e1903c99d70b",
+  "description": {
+    "figure_type": "other",
+    "summary": "Here is the chart analysis without valid json formatting.",
+    "components": [],
+    "text_labels_read": [],
+    "connections": [],
+    "data_flow": "",
+    "chart": {},
+    "unreadable_or_uncertain": [
+      "Output returned unformatted text."
+    ],
+    "confidence": "low"
+  }
+}

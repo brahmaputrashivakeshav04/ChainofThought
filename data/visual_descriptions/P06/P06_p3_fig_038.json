@@ -1,0 +1,40 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.572179Z",
+  "parent_chunk_id": "P06_p3_fig_038",
+  "paper_id": "P06",
+  "page": 3,
+  "figure_number": "P06_p3_fig1",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P06\\fig_1_p3.png",
+  "image_hash": "74cf69c8f7ee6d5c4a99533149eda8a9de0eade7c20615b5bd6fb4e253c5f478",
+  "description": {
+    "figure_type": "architecture diagram",
+    "summary": "Visual representation of Figure 1: The pipeline for MultiDocFusion. The figure illustrates the step-by-step process for handling a long industrial document. (a) DP extracts layout structures; (b) OCR recognizes and annotates text; (c) DSHP-LLM constructs a hierarchical tree from identified section headers and general nodes; (d) DFS-based Grouping constructs coherent hierarchical chunks for retrieval tasks. The color-coded blocks represent document elements: yellow for Root and Title, red for Section Headers, and green for general nodes (tables, figures, and text blocks). on page 3.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {},
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

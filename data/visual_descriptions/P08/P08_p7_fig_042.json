@@ -1,0 +1,40 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.619335Z",
+  "parent_chunk_id": "P08_p7_fig_042",
+  "paper_id": "P08",
+  "page": 7,
+  "figure_number": "P08_p7_fig2",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P08\\fig_2_p7.png",
+  "image_hash": "f30a41c966e79c81cbdb03e5a7168790bed9a155f38466e49cf220c30a14a224",
+  "description": {
+    "figure_type": "architecture diagram",
+    "summary": "Visual representation of Fig.\u00a02\u2002 Flowchart of entity extraction, relation linking, and multimodal knowledge graph construction on page 7.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {},
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

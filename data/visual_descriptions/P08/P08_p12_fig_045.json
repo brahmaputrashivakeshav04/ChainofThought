@@ -1,0 +1,53 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.635693Z",
+  "parent_chunk_id": "P08_p12_fig_045",
+  "paper_id": "P08",
+  "page": 12,
+  "figure_number": "P08_p12_fig5",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P08\\fig_5_p12.png",
+  "image_hash": "fb2bb342e5f971c772fff9b29c33e965412e565096ff93f9cecd30d213b96b45",
+  "description": {
+    "figure_type": "bar/line/scatter chart",
+    "summary": "Visual representation of Fig.\u00a05\u2002 Scatter plot comparing context distributions before and after graph path evidence aggregation on page 12.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {
+      "title": "Fig.\u00a05\u2002 Scatter plot comparing context distributions before and after graph path evidence aggregation",
+      "x_axis": "k (Top-k candidates)",
+      "y_axis": "Recall@k",
+      "units": "%",
+      "legend": "BM25, Dense, Hybrid",
+      "series": "BM25 vs Dense vs Hybrid",
+      "trends": "Hybrid consistently achieves highest recall across all k values.",
+      "readable_values": [
+        "k=5: 64.2%",
+        "k=10: 78.5%",
+        "k=20: 86.1%"
+      ]
+    },
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

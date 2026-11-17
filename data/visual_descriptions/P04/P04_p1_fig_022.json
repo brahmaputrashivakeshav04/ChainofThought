@@ -1,0 +1,40 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.517772Z",
+  "parent_chunk_id": "P04_p1_fig_022",
+  "paper_id": "P04",
+  "page": 1,
+  "figure_number": "P04_p1_fig1",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P04\\fig_1_p1.png",
+  "image_hash": "49079b23feded78839c84a12cdafcf290e33dd54385fed5e1555211a77e3b70c",
+  "description": {
+    "figure_type": "architecture diagram",
+    "summary": "Visual representation of Figure 1: Example of RAG for SQL generation: Se- mantic search misses the Customers table in the top-5 results, whereas GraphER reranks the candidates to re- trieve all relevant tables. on page 1.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {},
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

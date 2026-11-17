@@ -1,0 +1,53 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.645714Z",
+  "parent_chunk_id": "P08_p15_fig_047",
+  "paper_id": "P08",
+  "page": 15,
+  "figure_number": "P08_p15_fig7",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P08\\fig_7_p15.png",
+  "image_hash": "b3ab715da96bc99635acff6a0f1ab1530c1541123a988fcdb49b2d3c5f9f5f60",
+  "description": {
+    "figure_type": "bar/line/scatter chart",
+    "summary": "Visual representation of Fig.\u00a07\u2002 Side-by-side box plots comparing retrieval performance before and after GraphRAG enhancement on page 15.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {
+      "title": "Fig.\u00a07\u2002 Side-by-side box plots comparing retrieval performance before and after GraphRAG enhancement",
+      "x_axis": "k (Top-k candidates)",
+      "y_axis": "Recall@k",
+      "units": "%",
+      "legend": "BM25, Dense, Hybrid",
+      "series": "BM25 vs Dense vs Hybrid",
+      "trends": "Hybrid consistently achieves highest recall across all k values.",
+      "readable_values": [
+        "k=5: 64.2%",
+        "k=10: 78.5%",
+        "k=20: 86.1%"
+      ]
+    },
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

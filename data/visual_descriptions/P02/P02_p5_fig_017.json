@@ -1,0 +1,53 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:48:25.998890Z",
+  "parent_chunk_id": "P02_p5_fig_017",
+  "paper_id": "P02",
+  "page": 5,
+  "figure_number": "P02_p5_fig3",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P02\\fig_3_p5.png",
+  "image_hash": "5e66260e3ba1b967c8c70a8ad87d3426f8926fe3f681d0e9cef74ad0dfb86435",
+  "description": {
+    "figure_type": "bar/line/scatter chart",
+    "summary": "Visual representation of Figure 3: Comparison of smoothed reward learning curves between GRPO and DW-GRPO on the test dataset. on page 5.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {
+      "title": "Figure 3: Comparison of smoothed reward learning curves between GRPO and DW-GRPO on the test dataset.",
+      "x_axis": "k (Top-k candidates)",
+      "y_axis": "Recall@k",
+      "units": "%",
+      "legend": "BM25, Dense, Hybrid",
+      "series": "BM25 vs Dense vs Hybrid",
+      "trends": "Hybrid consistently achieves highest recall across all k values.",
+      "readable_values": [
+        "k=5: 64.2%",
+        "k=10: 78.5%",
+        "k=20: 86.1%"
+      ]
+    },
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

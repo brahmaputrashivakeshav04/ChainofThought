@@ -1,0 +1,54 @@
+# Environment variables & secrets
+.env
+*.env
+!.env.example
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & type checking
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# ResearchIQ Data Directories (HARD REQUIREMENT: Never commit raw research PDFs or generated index/figures)
+research-data/*.pdf
+data/papers/*
+!data/papers/.gitkeep
+data/figures/
+data/index/
+data/tables/
+data/cache/
+
+# Track catalog
+!papers_catalogue.csv
+
+# OS specific files
+.DS_Store
+Thumbs.db

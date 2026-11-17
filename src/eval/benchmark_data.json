@@ -1,0 +1,42 @@
+[
+  {
+    "query_id": "Q01",
+    "query": "How does Deep GraphRAG balance hierarchical retrieval and adaptive integration?",
+    "target_paper_id": "P02",
+    "relevant_chunk_ids": ["P02_p1_c001", "P02_p2_c002"],
+    "requires_visual": true,
+    "topic": "GraphRAG"
+  },
+  {
+    "query_id": "Q02",
+    "query": "What are the key limitations of BM25 compared to dense retrieval on text-and-table documents?",
+    "target_paper_id": "P05",
+    "relevant_chunk_ids": ["P05_p1_c001", "P05_p3_c004"],
+    "requires_visual": false,
+    "topic": "Hybrid Search & Benchmarking"
+  },
+  {
+    "query_id": "Q03",
+    "query": "How does MultiDocFusion preserve visual relationships for industrial documents?",
+    "target_paper_id": "P06",
+    "relevant_chunk_ids": ["P06_p2_c002", "P06_p4_c005"],
+    "requires_visual": true,
+    "topic": "Multimodal Chunking"
+  },
+  {
+    "query_id": "Q04",
+    "query": "What graph enrichment and reranking strategy does GraphER introduce?",
+    "target_paper_id": "P04",
+    "relevant_chunk_ids": ["P04_p1_c001", "P04_p3_c003"],
+    "requires_visual": false,
+    "topic": "Graph Reranking"
+  },
+  {
+    "query_id": "Q05",
+    "query": "What is the quantum teleportation protocol used by Deep GraphRAG for distributed node communication?",
+    "target_paper_id": "UNSUPPORTED",
+    "relevant_chunk_ids": [],
+    "requires_visual": false,
+    "topic": "Negative Control / Insufficient Evidence Test"
+  }
+]

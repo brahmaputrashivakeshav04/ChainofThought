@@ -1,0 +1,40 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.488609Z",
+  "parent_chunk_id": "P03_p8_fig_046",
+  "paper_id": "P03",
+  "page": 8,
+  "figure_number": "P03_p8_fig7",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P03\\fig_7_p8.png",
+  "image_hash": "4add28b8b4154649ee444acd9f44f3bef5e432b731300dab714b852cd46ee128",
+  "description": {
+    "figure_type": "architecture diagram",
+    "summary": "Visual representation of Figure 1: Pathogenesis of Genetic Diseases. Figure 1 outlines a sequence of events leading to genetic diseases: (1) Mutation (2) Deletion / Duplication / Rearrangement of Genetic Material (3) Deficient / Defective Transcription of mRNA (4) Deficient / Defective Post-Transcriptional Modifications of mRNA (5) Deficient / Defective Translation of mRNA (6) Deficient / Defective Production of Proteins / Regulatory Factors (7) Deficient / Defective Post-Translational Modifications of Proteins (8) Disturbed Function(s) of Metabolic Networks (9) Patho-Physiological Alterations of Cellular Functions (10) Genetic Disease on page 8.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {},
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

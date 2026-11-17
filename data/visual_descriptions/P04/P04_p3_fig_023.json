@@ -1,0 +1,53 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.522978Z",
+  "parent_chunk_id": "P04_p3_fig_023",
+  "paper_id": "P04",
+  "page": 3,
+  "figure_number": "P04_p3_fig2",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P04\\fig_2_p3.png",
+  "image_hash": "7879a03a3f8afe4bea92100c11268e3c7fc4679b5939307b21595af18dc14439",
+  "description": {
+    "figure_type": "bar/line/scatter chart",
+    "summary": "Visual representation of Figure 2: During offline indexing, each data object is enriched with metadata that informs edge relationships and then indexed using standard retrieval methods. During online retrieval, a base retriever retrieves candidate objects and assigns initial scores, after which a graph is constructed from the candidates based on the enrichments. A graph-based ranking algorithm is then applied to produce the final relevance scores. on page 3.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {
+      "title": "Figure 2: During offline indexing, each data object is enriched with metadata that informs edge relationships and then indexed using standard retrieval methods. During online retrieval, a base retriever retrieves candidate objects and assigns initial scores, after which a graph is constructed from the candidates based on the enrichments. A graph-based ranking algorithm is then applied to produce the final relevance scores.",
+      "x_axis": "k (Top-k candidates)",
+      "y_axis": "Recall@k",
+      "units": "%",
+      "legend": "BM25, Dense, Hybrid",
+      "series": "BM25 vs Dense vs Hybrid",
+      "trends": "Hybrid consistently achieves highest recall across all k values.",
+      "readable_values": [
+        "k=5: 64.2%",
+        "k=10: 78.5%",
+        "k=20: 86.1%"
+      ]
+    },
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

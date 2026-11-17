@@ -1,0 +1,40 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.584443Z",
+  "parent_chunk_id": "P06_p17_fig_040",
+  "paper_id": "P06",
+  "page": 17,
+  "figure_number": "P06_p17_fig3",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P06\\fig_3_p17.png",
+  "image_hash": "7e62e4f444c6df6b11c976d16d58c40740108f762480cb2ddd46d622744c3a14",
+  "description": {
+    "figure_type": "architecture diagram",
+    "summary": "Visual representation of Figure 3: Step-by-step illustration aligned with the MultiDocFusion pipeline: (a) Document Parsing (DP), (b) OCR, (c) DSHP-LLM for section hierarchy reconstruction and node attachment, and (d) DFS-based Grouping for hierarchy-aware chunking. on page 17.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {},
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

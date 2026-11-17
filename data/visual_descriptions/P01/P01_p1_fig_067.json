@@ -1,0 +1,40 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.392453Z",
+  "parent_chunk_id": "P01_p1_fig_067",
+  "paper_id": "P01",
+  "page": 1,
+  "figure_number": "P01_p1_fig1",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P01\\fig_1_p1.png",
+  "image_hash": "ec47fd17adcfe629aac7145a16af0f9c71857b5e83408e99cbc5f177ad617995",
+  "description": {
+    "figure_type": "architecture diagram",
+    "summary": "Visual representation of Figure 1: Impact and research progress of Mul- timodal RAG for document understanding: (a) MLLMs with and without Multimodal RAG for large document comprehension. (b) Growth in related publi- cations from 2024 to 2025. on page 1.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {},
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

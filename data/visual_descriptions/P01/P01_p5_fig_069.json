@@ -1,0 +1,40 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.401131Z",
+  "parent_chunk_id": "P01_p5_fig_069",
+  "paper_id": "P01",
+  "page": 5,
+  "figure_number": "P01_p5_fig3",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P01\\fig_3_p5.png",
+  "image_hash": "62dbcaeba39ac853c2183972be86d03e0ecffb8c0b9afabef07ee42534838606",
+  "description": {
+    "figure_type": "architecture diagram",
+    "summary": "Visual representation of Figure 3: Comparison of retrieval modality: (a) image-based RAG retrieves information solely from page images, offering efficiency but limited tex- tual detail; (b) image+text-based RAG integrates OCR/annotations with visual features, enabling richer retrieval at the cost of higher processing complexity. on page 5.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {},
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

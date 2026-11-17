@@ -1,0 +1,40 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.409760Z",
+  "parent_chunk_id": "P01_p7_fig_071",
+  "paper_id": "P01",
+  "page": 7,
+  "figure_number": "P01_p7_fig5",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P01\\fig_5_p7.png",
+  "image_hash": "2386c3d369c45feea6e88f1c2ab1240a1eeaab7b3b976798af37a87ac7c09e3d",
+  "description": {
+    "figure_type": "architecture diagram",
+    "summary": "Visual representation of Figure 5: Hybrid enhancements for multimodal RAG. (a) Graph-based: documents/elements form a graph in- dex, and retrieval proceeds via graph traversal to sur- face relevant neighborhoods. (b) Agent-based: an LLM agent decomposes the text query, orchestrates multi- modal retrieval, verifies the gathered evidence, and syn- thesizes the final answer. on page 7.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {},
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.562484Z",
+  "parent_chunk_id": "P05_p7_fig_027",
+  "paper_id": "P05",
+  "page": 7,
+  "figure_number": "P05_p7_fig5",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P05\\fig_5_p7.png",
+  "image_hash": "3d470babb746f21f5095698761e23fcfa40e0306f2895f915d77a804f31a2f95",
+  "description": {
+    "figure_type": "bar/line/scatter chart",
+    "summary": "Visual representation of Fig. 5. Fusion method ablation. Left: Convex Combination with varying \u03b1 (dense weight); \u03b1 = 0.5 is optimal. Right: RRF with varying k; lower k yields slightly better results. on page 7.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {
+      "title": "Fig. 5. Fusion method ablation. Left: Convex Combination with varying \u03b1 (dense weight); \u03b1 = 0.5 is optimal. Right: RRF with varying k; lower k yields slightly better results.",
+      "x_axis": "k (Top-k candidates)",
+      "y_axis": "Recall@k",
+      "units": "%",
+      "legend": "BM25, Dense, Hybrid",
+      "series": "BM25 vs Dense vs Hybrid",
+      "trends": "Hybrid consistently achieves highest recall across all k values.",
+      "readable_values": [
+        "k=5: 64.2%",
+        "k=10: 78.5%",
+        "k=20: 86.1%"
+      ]
+    },
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.631334Z",
+  "parent_chunk_id": "P08_p10_fig_044",
+  "paper_id": "P08",
+  "page": 10,
+  "figure_number": "P08_p10_fig4",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P08\\fig_4_p10.png",
+  "image_hash": "8333fc9ccc25939555ce95196291b0cc80a69d7ccdf1349ac7c71046cda7b860",
+  "description": {
+    "figure_type": "architecture diagram",
+    "summary": "Visual representation of Fig.\u00a04\u2002 Combined entity-relationship expansion diagram based on knowledge graphs on page 10.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {},
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

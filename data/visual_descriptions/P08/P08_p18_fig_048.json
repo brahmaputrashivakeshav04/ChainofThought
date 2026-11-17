@@ -1,0 +1,40 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.652134Z",
+  "parent_chunk_id": "P08_p18_fig_048",
+  "paper_id": "P08",
+  "page": 18,
+  "figure_number": "P08_p18_fig8",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P08\\fig_8_p18.png",
+  "image_hash": "e5e3fef4fb3f79f862393da95fd5e4bc27a75351d6f3e92f5b5f7cd774be83ab",
+  "description": {
+    "figure_type": "architecture diagram",
+    "summary": "Visual representation of Fig.\u00a08\u2002 Direct evidence of cross-modal semantic alignment and representative modality-conflict resolution cases on page 18.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {},
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

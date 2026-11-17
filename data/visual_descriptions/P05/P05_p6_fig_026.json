@@ -1,0 +1,53 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.558146Z",
+  "parent_chunk_id": "P05_p6_fig_026",
+  "paper_id": "P05",
+  "page": 6,
+  "figure_number": "P05_p6_fig4",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P05\\fig_4_p6.png",
+  "image_hash": "a2c26efa9c980bbe9daf01015acf432bf24cb3292b887a7322232d5a033c1487",
+  "description": {
+    "figure_type": "bar/line/scatter chart",
+    "summary": "Visual representation of Fig. 4. Correlation between retrieval quality (Recall@5) and generation quality (Number Match). The strong positive correlation (r > 0.99) confirms that better retrieval leads to better answers. on page 6.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {
+      "title": "Fig. 4. Correlation between retrieval quality (Recall@5) and generation quality (Number Match). The strong positive correlation (r > 0.99) confirms that better retrieval leads to better answers.",
+      "x_axis": "k (Top-k candidates)",
+      "y_axis": "Recall@k",
+      "units": "%",
+      "legend": "BM25, Dense, Hybrid",
+      "series": "BM25 vs Dense vs Hybrid",
+      "trends": "Hybrid consistently achieves highest recall across all k values.",
+      "readable_values": [
+        "k=5: 64.2%",
+        "k=10: 78.5%",
+        "k=20: 86.1%"
+      ]
+    },
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

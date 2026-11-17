@@ -1,0 +1,40 @@
+{
+  "source": "ai_generated_gemini_vision",
+  "model_name": "mock-vision-provider",
+  "prompt_version": "v1.0",
+  "timestamp": "2026-11-17T08:47:54.406115Z",
+  "parent_chunk_id": "P01_p6_fig_070",
+  "paper_id": "P01",
+  "page": 6,
+  "figure_number": "P01_p6_fig4",
+  "image_path": "C:\\Users\\mital\\OneDrive\\Desktop\\Hackathon Final\\data\\figures\\P01\\fig_4_p6.png",
+  "image_hash": "35b36aefdcea89ebe61ba52a2de5c8cc4208719cd88fd60bd4908687d221d64b",
+  "description": {
+    "figure_type": "architecture diagram",
+    "summary": "Visual representation of Figure 4: Comparison of retrieval granularity in mul- timodal document search. (a) Page-level: entire pages are encoded and ranked as whole units. (b) Element- level: pages are decomposed into tables, charts, images, and text blocks; retrieval operates over these elements to localize evidence and aggregate results. on page 6.",
+    "components": [
+      "Input Query",
+      "Retriever Module",
+      "Reranker",
+      "Generator"
+    ],
+    "text_labels_read": [
+      "Query",
+      "BM25",
+      "Dense Encoder",
+      "RRF Score",
+      "Output Answer"
+    ],
+    "connections": [
+      "Input Query -> Retriever Module",
+      "Retriever Module -> Reranker",
+      "Reranker -> Generator"
+    ],
+    "data_flow": "Query is routed to dense and sparse retrievers, fused via RRF, and passed to LLM.",
+    "chart": {},
+    "unreadable_or_uncertain": [
+      "Sub-label font below 6pt unreadable"
+    ],
+    "confidence": "high"
+  }
+}

@@ -1,0 +1,11 @@
+question,type,expected_paper_id,expected_page
+What does Deep GraphRAG propose for adaptive knowledge integration?,fact,P02,1
+What does GraphER focus on for retrieval-augmented generation?,fact,P04,1
+What retrieval strategies benchmark is evaluated in From BM25 to Corrective RAG?,fact,P05,1
+What is the focus of the multimodal document understanding survey in P01?,fact,P01,1
+What architecture components are shown in Figure 1 of Deep GraphRAG overview?,visual,P02,2
+What does Figure 2 depict regarding the overall architecture of HyGRAG?,visual,P07,4
+What dataset statistics or experimental setups are reported in Table 1 of P05?,table,P05,5
+How do graph-based RAG approaches such as Deep GraphRAG and HyGRAG structure their retrieval pipelines?,cross_paper,P02,2
+What is the multi-step chemical synthesis route and reaction yield for remdesivir antiviral drug?,unanswerable,NONE,-1
+What are the physical qubit error rate thresholds required to implement a fault-tolerant surface code?,unanswerable,NONE,-1
